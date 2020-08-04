@@ -1,13 +1,13 @@
 const colours = ["green", "red", "rgba(133,122,200)", "#f15025"];
 const button = document.getElementById("btn");
-const colour = document.querySelector("colour");
+const colour = document.querySelector(".colour");
 
 button.addEventListener("click", function () {
   // get random number between 0 and 3
   const randomNumber = getRandomNumber();
   console.log(randomNumber);
   document.body.style.backgroundColor = colours[randomNumber];
-  colours.textContent = colours[randomNumber];
+  colour.textContent = colours[randomNumber];
 });
 
 function getRandomNumber() {
